@@ -1,0 +1,14 @@
+.future{
+  @include box;
+  img {
+    margin: 0 auto 20px;
+    width: 775px;
+    height: 500px;
+    display: block;
+  }
+  @media(max-width: 765px) {
+    &.mobile-fix{
+      display: none;
+    }
+  }
+}

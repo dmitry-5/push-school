@@ -1,0 +1,529 @@
+.advantages{
+  @include box;
+  @media (max-width: 1300px) {
+    padding-bottom: 30px;
+  }
+  .layout{
+    width: 100%;
+  }
+  .montgolfier{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:200px 0 0 -160px;
+    width: 280px;
+    height: 360px;
+    z-index: 1;
+    @media (max-width: 1730px) {
+      width: 200px;
+      height: 260px;
+      margin:200px 0 0 -105px;
+    }
+    @media (max-width: 1440px) {
+      width: 200px;
+      height: 260px;
+      margin:200px 0 0 -105px;
+    }
+    @media (max-width: 1300px) {
+      display: none;
+      z-index: -1;
+    }
+
+  }
+  ul.left {
+    width: 50%;
+    float: left;
+    position: relative;
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    margin: 40px 0 0 0;
+    @media (max-width: 1300px) {
+      width: 100%;
+    }
+    li{
+      float: left;
+      @media (max-width: 1300px) {
+        &:nth-child(odd){
+          align-self: center;
+          margin-right: 25% !important;
+        }
+        &:nth-child(even){
+          align-self: center;
+          margin-left: 25% !important;
+        }
+      }
+      @media (max-width: 800px) {
+        &:nth-child(even){
+          align-self: flex-end;
+          margin-right: 5% !important;
+        }
+        &:nth-child(odd){
+           align-self: flex-start;
+          margin-left: 5% !important;
+        }
+      }
+      @media (max-width: 400px) {
+        &:nth-child(even){
+          margin-top: 10px !important;
+        }
+        &:nth-child(odd){
+        margin-top: 10px !important;
+        }
+      }
+      &:first-child{
+        margin: 0 0 20px 236px;
+        @media (max-width: 1730px) {
+          margin: 0 0 20px 160px;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 0 20px 160px;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+      }
+      &:nth-child(2){
+        margin: 0 0 20px 92px;
+        @media (max-width: 1730px) {
+          margin: 0 0 20px 80px;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 0 20px 80px;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      &:nth-child(3){
+        margin: 0 0 20px 0;
+      }
+      &:nth-child(4){
+        margin: 0 0 20px 92px;
+        @media (max-width: 1730px) {
+          margin: 0 0 20px 80px;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 0 20px 80px;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      &:last-child{
+        margin: 0 0 20px 236px;
+        @media (max-width: 1730px) {
+          margin: 0 0 20px 160px;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 0 20px 160px;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      p{
+        width: 444px;
+        height: 137px;
+        padding: 0 80px;
+        color:#fff;;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        em{
+          color: #fff;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 20px;
+          font-family: $font;
+          text-align: left;
+          @media (max-width: 1730px) {
+            font-size: 18px;
+          }
+          @media (max-width: 1440px) {
+            font-size: 18px;
+          }
+          @media (max-width: 1300px) {
+          }
+          @media (max-width: 780px) {
+          }
+          @media (max-width: 760px) {
+          }
+        }
+        @media (max-width: 1730px) {
+          width: 342px;
+          height: 90px;
+          background-size: 342px 90px;
+          padding: 0 70px;
+        }
+        @media (max-width: 1440px) {
+          width: 342px;
+          height: 90px;
+          padding: 0 70px;
+          background-size: 342px 90px;
+        }
+        @media (max-width: 1300px) {
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      span{
+        float: left;
+        font-family: $fontalt;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 137px;
+        letter-spacing: 0.09em;
+        margin: 0 40px;
+        color: $navy;
+        @media (max-width: 1730px) {
+          font-size: 36px;
+          line-height: 90px;
+          margin: 0 0;
+        }
+        @media (max-width: 1440px) {
+          font-size: 36px;
+          line-height: 90px;
+          margin: 0 0;
+        }
+        @media (max-width: 1300px) {
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      p {
+        background-image:url(../images/img_sign_L_blue.png);
+      }
+      &:nth-child(2n){
+        p {
+          background-image:url(../images/img_sign_L_cian.png);
+        }
+        span {
+          color: $blue;
+        }
+      }
+    }
+  }
+  ul.right {
+    width: 50%;
+    float: right;
+    position: relative;
+    z-index: 2;
+    margin: 40px 0 0 0;
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 1300px) {
+      width: 100%;
+    }
+    li{
+      float: right;
+      @media (max-width: 1300px) {
+        &:nth-child(even){
+          align-self: center;
+          margin-right: 25% !important;
+        }
+        &:nth-child(odd){
+          align-self: center;
+          margin-left: 25% !important;
+        }
+      }
+      @media (max-width: 800px) {
+        &:nth-child(odd){
+          align-self: flex-end;
+          margin-right: 5% !important;
+        }
+        &:nth-child(even){
+          align-self: flex-start;
+          margin-left: 5% !important;
+        }
+      }
+      @media (max-width: 400px) {
+        &:nth-child(even){
+          margin-top: 10px !important;
+        }
+        &:nth-child(odd){
+        margin-top: 10px !important;
+        }
+      }
+      &:first-child{
+        margin: 0 236px 20px 0;
+        @media (max-width: 1730px) {
+          margin: 0 160px 20px 0;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 160px 20px 0;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      &:nth-child(2){
+        margin: 0 92px 20px 0;
+        @media (max-width: 1730px) {
+          margin: 0 80px 20px 0;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 80px 20px 0;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      &:nth-child(3){
+        margin: 0 0 20px 0;
+      }
+      &:nth-child(4){
+        margin: 0 92px 20px 0;
+        @media (max-width: 1730px) {
+          margin: 0 80px 20px 0;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 80px 20px 0;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      &:last-child{
+        margin: 0 236px 20px 0;
+        @media (max-width: 1730px) {
+          margin: 0 160px 20px 0;
+        }
+        @media (max-width: 1440px) {
+          margin: 0 160px 20px 0;
+        }
+        @media (max-width: 1300px) {
+          margin: 0;
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      p{
+        width: 444px;
+        height: 137px;
+        padding: 0 80px;
+        color: #fff;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        em{
+          color: #fff;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 20px;
+          font-family: $font;
+          text-align: left;
+          @media (max-width: 1730px) {
+            font-size: 18px;
+          }
+          @media (max-width: 1440px) {
+            font-size: 18px;
+          }
+          @media (max-width: 1300px) {
+          }
+          @media (max-width: 780px) {
+          }
+          @media (max-width: 760px) {
+          }
+        }
+        @media (max-width: 1730px) {
+          width: 342px;
+          height: 90px;
+          padding: 0 70px;
+          background-size: 342px 90px;
+        }
+        @media (max-width: 1440px) {
+          width: 342px;
+          height: 90px;
+          padding: 0 70px;
+          background-size: 342px 90px;
+        }
+        @media (max-width: 1300px) {
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      span{
+        float: left;
+        font-family: $fontalt;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 137px;
+        letter-spacing: 0.09em;
+        color: $blue;
+        margin: 0 40px;
+        @media (max-width: 1730px) {
+          font-size: 36px;
+          line-height: 90px;
+          margin: 0 0;
+        }
+        @media (max-width: 1440px) {
+          font-size: 36px;
+          line-height: 90px;
+          margin: 0 0;
+        }
+        @media (max-width: 1300px) {
+        }
+        @media (max-width: 780px) {
+        }
+        @media (max-width: 760px) {
+        }
+      }
+      p {
+        background-image:url(../images/img_sign_R_cian.png);
+      }
+      &:nth-child(2n){
+        p {
+          background-image:url(../images/img_sign_К_blue.png);
+        }
+        span{
+          color: $navy;
+        }
+      }
+    }
+  }
+  ul.left, ul.right{
+    @media (max-width: 1300px) {
+      float: none;
+      display: flex;
+      flex-direction: column;
+      li{
+        float: none;
+        margin: 0;
+        p{
+          margin-right: 10px;
+          padding: 10px 60px;
+          background-size: 100% 100%;
+        }
+        &:first-child{
+          display: flex;
+        }
+        &:nth-child(n){
+          display: flex;
+        }
+        span{
+          line-height: 70px;
+        }
+      }
+    }
+    @media(max-width: 655px){
+      li{
+        min-width: 270px;
+        p{
+          padding: 10px 50px 10px 44px;
+          width: 250px;
+          height: 73px;
+          em{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  ul.left{
+    @media (max-width: 1300px){
+      li{
+        display: flex;
+        align-items: center;
+        &:nth-child(2n){
+          margin: 0;
+          position: relative;
+          flex-direction: row-reverse;
+          p{
+            background-image: url(../images/img_sign_R_cian.png);
+          }
+        }
+        &:nth-child(2n-1){
+          margin: 0;
+        }
+      }
+    }
+    @media(max-width: 450px){
+      li{
+        &:nth-child(2n){
+          left: 20px;
+          right: auto;
+        }
+      }
+    }
+  }
+  ul.right{
+    @media (max-width: 1300px){
+      margin-top: 0;
+      li{
+        display: flex;
+        align-items: center;
+        &:nth-child(2n-1){
+          margin: 0;
+          flex-direction: row-reverse;
+          position: relative;
+        }
+        &:nth-child(2n){
+          margin: 0;
+          p{
+            background-image: url(../images/img_sign_L_blue.png);
+          }
+        }
+      }
+    }
+    @media(max-width: 450px){
+      li{
+        &:nth-child(2n-1){
+          left: 20px;
+          right: auto;
+        }
+      }
+    }
+  }
+}

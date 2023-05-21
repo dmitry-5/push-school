@@ -1,0 +1,30 @@
+/* SCSS Compiled */
+@import "global/reset.scss";
+@import "global/mixins.scss";
+@import "global/var.scss";
+@import "global/styles.scss";
+
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/notfound.scss";
+@import "partials/preview.scss";
+@import "partials/founders.scss";
+@import "partials/advantages.scss";
+@import "partials/future.scss";
+
+/* Pages stylesheets */
+@import "partials/_workshop_and_sections.scss";
+@import "partials/license.scss";
+@import "partials/contacts.scss";
+@import "partials/detailed.scss";
+@import "partials/contacts.scss";
+@import "partials/detailed.scss";
+@import "partials/events.scss";
+@import "partials/vacancies.scss";
+@import "partials/zno.scss";
+@import "partials/reception_schedule.scss";
+@import "partials/our_team.scss";
+@import "partials/all_about_push.scss";
+@import "partials/schedule.scss";
+@import "partials/docs.scss";
+

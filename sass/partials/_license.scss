@@ -1,0 +1,193 @@
+.license-box{
+	width: 50%;
+	min-height: calc(100vh - 389px);
+	height: auto;
+	margin: 35px auto 0 auto;
+	background-color: #fff;
+	font-family: Nunito;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 20px rgba(70, 70, 70, 0.3);
+	border-radius: 10px 10px 0px 0px;
+		@media (max-width: 1370px) {
+			min-height: calc(100vh - 335px);
+		}
+		@media (max-width: 780px) {
+			width: 70%;
+			left: 15%;
+		}
+		@media (max-width: 900px) {
+			height: auto;
+		}
+}
+.license-plane_img{
+	position: absolute;
+	left: 140px;
+	top: 16vh;
+	z-index: 2;
+	@media (max-width: 1440px) {
+		width: 130px;
+		height: 160px;
+		top: 17vh;
+	}
+	@media (max-width: 1130px) {
+		left: 85px;
+	}
+	@media (max-width: 910px) {
+		left: 61px;
+	}
+	@media (max-width: 780px) {
+		width: 70px;
+		left: 40px;
+		height: 100px;
+		top: 16vh;
+	}
+	@media (max-width: 770px) and( max-width: 1030px) {
+		top: 9vh;
+	}
+	@media (max-width: 730px) {
+		display: none;
+	}
+}
+.license-box h3{
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 50px;
+	color: #01579B;
+	padding-top: 17px;
+	margin-left: 10%;
+}
+.license-box p{
+	width: 80%;
+	margin: 20px auto 0 auto;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	color: #333;
+}
+@media (max-width: 1730px) {
+	.license-box p{
+		font-size: 22px;
+	}
+}
+@media (max-width: 1440px) {
+	.license-box h3 {
+		font-size: 25px;
+    	margin-left: 6%;
+		padding-top: 3px;
+	}
+	.license-box p {
+		width: 89%;
+	    margin: 11px auto 0 6%;
+	    font-size: 18px;
+	}
+	.license-books_img{
+		width: 180px;
+	}
+}
+@media (max-width: 1370px) {
+	.license-box{
+		margin: 10px auto 0 auto;
+		min-height: calc(100vh - 309px);
+	}
+	.license-container{
+		height: calc(100vh - 299px);
+		padding-top: 0;
+	}
+}
+@media (max-width: 1300px) {
+	.license-box{
+		// margin-top: 84px;
+		min-height: calc(100vh - 340px);
+	}
+	.license-container{
+		min-height: calc(100vh - 264px);;
+	}
+}
+@media (max-width: 1030px) and (max-width: 1400px) {
+	.license-box{
+		width: 76%;
+	}
+	.license-box p{
+		font-size: 22px;
+	}
+	.license-plane_img{
+		width: 90px;
+	    height: 119px;
+	    top: 8vh;
+	    left: 25px;
+	}
+}
+
+@media (max-width: 910px) {
+	.license-box p {
+		width: 89%;
+	    margin: 10px auto 0 6%;
+	    font-size: 14px;
+	}
+	.license-books_img{
+		right: 20px;
+	}
+}
+@media (max-width: 780px){
+	.license-box{
+		width: 70%;
+		left: 15%;
+		p{
+			font-size: 16px;
+		}
+	}
+	.license-books_img {
+	    right: 0px;
+	    width: 165px;
+	}
+}
+@media (max-width: 768px){
+	.license-box{
+		// margin-top: 84px;
+		min-height: calc(100vh - 340px);
+	}
+	.license-container{
+		min-height: auto;
+		height: calc(100vh - 304px);
+	}
+}
+@media (max-width: 700px){
+	.license-main-block{
+		height: auto;
+	}
+	.license-box{
+		height: auto;
+	}
+	.license-box p{
+		&:last-child{
+			padding-bottom: 180px;
+		}
+	}
+}
+@media (max-width: 470px){
+	.license-box {
+		width: 84%;
+		height: auto;
+		margin: 25px auto 0 auto;
+	}
+	.license-main-block{
+		background-size: 100%;
+	}
+	.license-box p{
+		font-size: 14px;
+		&:last-child{
+			padding-bottom: 200px;
+		}
+	}
+}
+
+@media (max-width: 450px){
+	.license-box{
+		// margin-top: 84px;
+		min-height: calc(100vh - 340px);
+	}
+	.license-container{
+		min-height: auto;
+		height: auto;
+	}
+}

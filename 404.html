@@ -1,0 +1,102 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1">
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Push School</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<section class="notfound">
+			<div class="layout">
+				<div class="top">
+					<div class="logo alt">
+						<a href="#">
+							<img src="./images/img_logo.png" alt="push">
+						</a>
+						<h1>push school</h1>
+					</div>
+					<div class="flag_404">
+						<img src="./images/img_flag.png" alt="under construction">
+					</div>
+				</div>
+				<div class="attention">
+					<div class="text">
+						<h2>Харківський приватний ліцей «Перша Українська школа»</h2>
+						<ul class="contacts">
+							<li>
+								<p>
+									<img src="./images/ico_phone.png" alt="phone">
+									+38(099) 128 2048
+								</p>
+							</li>
+							<li>
+								<p>
+									<img class="address" src="./images/ico_placeholder.png" alt="placeholder">
+									м. Харків, вул. Академіка Павлова, 46
+								</p>
+							</li>
+							<li>
+								<a  href="mailto:lyceumpush@gmail.com">
+									<img src="./images/ico_mail.png" alt="mail">
+									lyceumpush@gmail.com
+								</a>
+							</li>
+						</ul>
+						<ul class="soc">
+							<li>
+								<p>Слідкуйте за нашими новинами</p>
+							</li>
+							<li>
+								<a class="fb" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/PUSHschooliscool/"></a>
+							</li>
+							<li>
+								<a class="insta" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/push_school/"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="books">
+						<img src="./images/img_books.png" alt="books">
+					</div>
+					<div class="ballon"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+	$(function() {
+		//ballon mouse move
+		var lFollowX = 0,
+		lFollowY = 0,
+		x = 0,
+		y = 0,
+		friction = 1 / 30;
+		function moveBackground() {
+			x += (lFollowX - x) * friction;
+			y += (lFollowY - y) * friction;
+			translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.01)';
+			$('.ballon, .montgolfier').css({
+				'-webit-transform': translate,
+				'-moz-transform': translate,
+				'transform': translate
+			});
+			window.requestAnimationFrame(moveBackground);
+		}
+		$(window).on('mousemove click', function(e) {
+			var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+			var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+			lFollowX = (25 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+			lFollowY = (25 * lMouseY) / 100;
+		});
+		moveBackground();
+	});
+	</script>
+</body>
+</html>

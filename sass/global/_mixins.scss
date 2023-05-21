@@ -1,0 +1,7 @@
+@mixin box {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+}

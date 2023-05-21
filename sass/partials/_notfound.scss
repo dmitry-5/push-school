@@ -1,0 +1,470 @@
+.notfound {
+  @include box;
+  height: 100vh;
+  background-color:#00BCD4;
+  @media (max-width: 760px) {
+    height: auto;
+    min-height:100vh;
+    padding: 0 0 30px;
+  }
+  .logo {
+  	float: left;
+  	width: 227px;
+  	height: 227px;
+  	overflow: hidden;
+  	&.alt {
+  		margin: 15px 0 0;
+  		@media (max-width: 1730px) {
+  			margin: 10px 0 0;
+  		}
+  		@media (max-width: 1440px) {
+  			margin: 10px 0 0;
+  		}
+  		@media (max-width: 1300px) {
+  			margin: 10px 0 0;
+  		}
+  		@media (max-width: 780px) {
+  			margin: 10px 0 0;
+  		}
+  		@media (max-width: 760px) {
+  			margin: -5px 0 0;
+  		}
+  	}
+  	@media (max-width: 1730px) {
+  		width: 110px;
+  		height: 110px;
+  	}
+  	@media (max-width: 1440px) {
+  		width: 110px;
+  		height: 110px;
+  	}
+  	@media (max-width: 1300px) {
+  		width: 110px;
+  		height: 110px;
+  	}
+  	@media (max-width: 780px) {
+  		width: 98px;
+  		height: 98px;
+  	}
+  	@media (max-width: 760px) {
+  		width: 75px;
+  		height: 75px;
+  	}
+
+  	a{
+  		cursor: pointer;
+  		img{
+  			width: auto;
+  			height: auto;
+  			max-width: 100%;
+  			max-height: 100%;
+  		}
+  	}
+  	h1{
+  		text-indent: -9999px;
+  	}
+  }
+  .top{
+    display: block;
+    width: 100%;
+    height: 242px;
+    overflow: visible;
+    @media (max-width: 1730px) {
+  		height: 115px;
+  	}
+  	@media (max-width: 1440px) {
+  		height: 115px;
+  	}
+  	@media (max-width: 1300px) {
+      height: 115px;
+  	}
+  	@media (max-width: 780px) {
+      height: 115px;
+  	}
+  	@media (max-width: 760px) {
+      height: 75px;
+  	}
+  }
+  .flag_404{
+    float: left;
+    margin: 66px 0 0 -18px;
+    @media (max-width: 1730px) {
+  		width: 350px;
+  		height:62px;
+      margin: 35px 0 0 -9px;
+  	}
+  	@media (max-width: 1440px) {
+      width: 350px;
+  		height:62px;
+      margin: 35px 0 0 -9px;
+  	}
+  	@media (max-width: 1300px) {
+      margin: 30px 0 0 -9px;
+  	}
+  	@media (max-width: 780px) {
+      margin: 30px 0 0 -9px;
+  	}
+  	@media (max-width: 760px) {
+      width: 210px;
+  		height:38px;
+      margin: 15px 0 0 -6px;
+  	}
+    img{
+      width: auto;
+      display: block;
+      overflow: hidden;
+    }
+  }
+  .attention{
+    @include box;
+    width: 995px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    background: $navy;
+    overflow: visible;
+    border-radius: 10px;
+    @media (max-width: 1730px) {
+  		margin: 35px auto 0;
+      width: 665px;
+      height: 400px;
+      padding: 15px 25px;
+  	}
+  	@media (max-width: 1440px) {
+  		margin: 35px auto 0;
+      width: 665px;
+      height: 400px;
+      padding: 15px 25px;
+  	}
+  	@media (max-width: 1300px) {
+      margin: 35px auto 0;
+      width: 665px;
+      height: 400px;
+      padding: 15px 25px;
+  	}
+  	@media (max-width: 780px) {
+      width: 452px;
+      height: 726px;
+  	}
+  	@media (max-width: 760px) {
+      width: 298px;
+      height: auto;
+      padding: 15px 10px 130px;
+  	}
+     .text {
+       overflow: hidden;
+     }
+    h2{
+      width: 540px;
+      margin: 0 auto 0;
+      padding: 40px 0 0 0;
+      display: block;
+      overflow: hidden;
+      font-family: $font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      text-align: center;
+      color: #FFFFFF;
+      position: relative;
+      z-index: 2;
+      @media (max-width: 1730px) {
+        font-size: 24px;
+        line-height: 33px;
+        padding: 25px 0 0 0;
+        width: 360px;
+      }
+      @media (max-width: 1440px) {
+        font-size: 24px;
+        line-height: 33px;
+        padding: 25px 0 0 0;
+        width: 360px;
+      }
+      @media (max-width: 1300px) {
+        font-size: 24px;
+        line-height: 33px;
+        padding: 25px 0 0 0;
+        width: 360px;
+      }
+      @media (max-width: 780px) {
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        padding: 170px 0 0 0;
+        width: 360px;
+      }
+      @media (max-width: 760px) {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        padding: 60px 0 0 0;
+        width: 260px;
+      }
+    }
+    .contacts{
+      @include box;
+      width: 540px;
+      margin: 135px auto 0;
+      @media (max-width: 1730px) {
+        width: 360px;
+        margin: 70px auto 0;
+      }
+      @media (max-width: 1440px) {
+        width: 360px;
+        margin: 70px auto 0;
+      }
+      @media (max-width: 1300px) {
+        width: 360px;
+        margin: 70px auto 0;
+      }
+      @media (max-width: 780px) {
+        width: 360px;
+        margin: 70px auto 0;
+      }
+      @media (max-width: 760px) {
+        width: 260px;
+        margin: 70px auto 0;
+      }
+      li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 0 0 20px;
+        overflow: hidden;
+        &:last-child{
+          margin: 0;
+        }
+        @media (max-width: 760px) {
+          margin: 0 0 10px;
+        }
+        p,a {
+          float: left;
+          width: 100%;
+          font-family: $font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 27px;
+          color: #FFFFFF;
+          @media (max-width: 1730px) {
+            font-size: 18px;
+            line-height: 25px;
+          }
+          @media (max-width: 1440px) {
+            font-size: 18px;
+            line-height: 25px;
+          }
+          @media (max-width: 1300px) {
+            font-size: 18px;
+            line-height: 25px;
+          }
+          @media (max-width: 780px) {
+            font-size: 18px;
+            line-height: 25px;
+          }
+          @media (max-width: 760px) {
+
+          }
+          img {
+            float: left;
+            margin: 0 12px 0 0;
+            @media (max-width: 760px) {
+              &.address {
+                margin: 0 12px 5px 0;
+              }
+            }
+          }
+        }
+        a:hover {
+          color:$rose;
+        }
+        &:last-child{
+          img {
+            margin: 6px 12px 0 0;
+          }
+        }
+      }
+    }
+    .soc{
+      float: right;
+      margin: 95px 0 0;
+      @media (max-width: 1730px) {
+        margin: 55px auto 0;
+      }
+      @media (max-width: 1440px) {
+        margin: 55px auto 0;
+      }
+      @media (max-width: 1300px) {
+        margin: 55px auto 0;
+      }
+      @media (max-width: 780px) {
+        margin: 55px auto 0;
+        text-align: center;
+      }
+      @media (max-width: 760px) {
+
+      }
+      li{
+        float: left;
+        @media (max-width: 780px) {
+          display: inline-block;
+          text-align: center;
+          float: none;
+          &:first-child {
+            width: 100%;
+          }
+        }
+        @media (max-width: 760px) {
+        }
+        p{
+          font-family: $font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 40px;
+          color: #FFFFFF;
+          float: left;
+          margin: 0;
+          @media (max-width: 1730px) {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          @media (max-width: 1440px) {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          @media (max-width: 1300px) {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          @media (max-width: 780px) {
+            font-weight: 600;
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+            float: none;
+            display: inline-block;
+          }
+          @media (max-width: 760px) {
+          }
+        }
+        a {
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin: 0 0 0 22px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          &.fb {
+            background-image: url(../images/ico_fb.png);
+            &:hover {
+              background-image: url(../images/ico_fb_hover.png);
+            }
+          }
+          &.insta {
+            background-image: url(../images/ico_insta.png);
+            &:hover {
+              background-image: url(../images/ico_insta_hover.png);
+            }
+          }
+          @media (max-width: 780px) {
+            display: inline-block;
+            text-align: center;
+            float: none;
+          }
+          @media (max-width: 760px) {
+            margin: 0 11px;
+          }
+        }
+      }
+    }
+    .books {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      left: -260px;
+      width: 355px;
+      height: 314px;
+      @media (max-width: 1730px) {
+        width: 210px;
+        height: 185px;
+        left: -150px;
+      }
+      @media (max-width: 1440px) {
+        width: 210px;
+        height: 185px;
+        left: -150px;
+      }
+      @media (max-width: 1300px) {
+        width: 210px;
+        height: 185px;
+        left: -150px;
+      }
+      @media (max-width: 780px) {
+        width: 210px;
+        height: 185px;
+        left: -150px;
+      }
+      @media (max-width: 760px) {
+        width: 108px;
+        height: 95px;
+        left: 15px;
+      }
+      img{
+        width: auto;
+        display: block;
+        overflow: hidden;
+      }
+    }
+    .ballon {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      width: 700px;
+      height: 374px;
+      right: -335px;
+      top: -130px;
+      z-index: 1;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url(../images/img_cloud_ballon_1920.png);
+      @media (max-width: 1730px) {
+        width: 468px;
+        height: 260px;
+        right: -225px;
+        top: -90px;
+        background-image: url(../images/img_cloud_ballon_1366.png);
+      }
+      @media (max-width: 1440px) {
+        width: 468px;
+        height: 260px;
+        right: -225px;
+        top: -90px;
+        background-image: url(../images/img_cloud_ballon_1366.png);
+      }
+      @media (max-width: 1300px) {
+        width: 296px;
+        height: 316px;
+        background-image: url(../images/img_cloud_ballon_768.png);
+      }
+      @media (max-width: 780px) {
+        width: 296px;
+        height: 316px;
+        right: -225px;
+        top: -90px;
+        background-image: url(../images/img_cloud_ballon_768.png);
+      }
+      @media (max-width: 760px) {
+        width: 178px;
+        height: 100px;
+        right: 0px;
+        top: -48px;
+        background-image: url(../images/img_cloud_ballon_320.png);
+      }
+    }
+  }
+}
